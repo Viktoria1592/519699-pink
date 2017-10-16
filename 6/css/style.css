@@ -797,7 +797,8 @@ body {
 
 .slider-controls__button {
   list-style-type: none;
-  margin-right: 10px; }
+  margin-right: 10px;
+  width: 9px; }
 
 .slider-controls__input {
   visibility: hidden;
@@ -971,7 +972,7 @@ body {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase; }
 
@@ -2053,15 +2054,12 @@ body {
     height: 170px; }
     .textarea__description::-webkit-input-placeholder {
       font-size: 19px;
-      word-spacing: -6px;
       padding-top: 1px; }
     .textarea__description:-ms-input-placeholder {
       font-size: 19px;
-      word-spacing: -6px;
       padding-top: 1px; }
     .textarea__description::placeholder {
       font-size: 19px;
-      word-spacing: -6px;
       padding-top: 1px; }
   .textarea__heading {
     display: none; } }
@@ -2070,13 +2068,7 @@ body {
   .textarea__description {
     width: 800px;
     height: 103px;
-    margin: 30px auto 43px; }
-    .textarea__description::-webkit-input-placeholder {
-      word-spacing: -5px; }
-    .textarea__description:-ms-input-placeholder {
-      word-spacing: -5px; }
-    .textarea__description::placeholder {
-      word-spacing: -5px; } }
+    margin: 30px auto 43px; } }
 
 .form .wrapper {
   display: -webkit-box;
@@ -2237,11 +2229,11 @@ body {
 
 .footer-main__logo-academy {
   display: inline;
-  width: 27px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: -9px;
-  left: 197px; }
+  top: -13px;
+  left: 190px; }
 
 .footer-main--index-mobile {
   display: none; }
@@ -2301,8 +2293,6 @@ body {
     margin-right: 37px;
     margin-top: 10px; }
   .footer-main__logo-academy {
-    width: 40px;
-    height: 40px;
     position: absolute;
     top: -9px;
     left: 92px; } }
@@ -2931,7 +2921,9 @@ body {
         justify-content: space-around; }
   .upload__tool-line {
     position: relative;
-    width: 278px; }
+    width: 278px;
+    height: 23px;
+    padding-bottom: 27px; }
     .upload__tool-line::after {
       content: "";
       display: block;
@@ -2978,7 +2970,8 @@ body {
     margin-right: 35px; }
   .upload__tool-line-container {
     margin-right: 60px;
-    margin-top: auto; }
+    margin-top: auto;
+    padding-top: 16px; }
   .upload__line-container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -3087,7 +3080,7 @@ body {
 
 .news__title {
   margin: 0;
-  line-height: 30px; }
+  line-height: 36px; }
 
 .news__text {
   color: #283645;
