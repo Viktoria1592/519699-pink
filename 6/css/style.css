@@ -541,7 +541,10 @@ body {
 @media (min-width: 960px) {
   .download {
     margin-top: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    position: absolute;
+    bottom: 92px;
+    left: 9px; }
   .download__text {
     display: block;
     margin: 10px auto 47px;
@@ -594,7 +597,8 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .information__img {
-    background-image: url("../img/iphone-screen-mobile@2x.png"); } }
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px, 278px; } }
 
 @media (min-width: 660px) {
   .information {
@@ -951,7 +955,8 @@ body {
           transform: translateX(-42.4%); }
 
 .slider-price__row {
-  border: 2px solid #e5e5e5; }
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff; }
 
 .slider-price__heading {
   background-color: #283645;
@@ -980,7 +985,6 @@ body {
   text-transform: uppercase; }
 
 .slider-price__column {
-  background-color: #ffffff;
   color: #283645;
   font-size: 14px;
   font-weight: 400;
@@ -1141,7 +1145,8 @@ body {
             flex-direction: row; }
   .slider-price__text-hidden {
     font-size: 0;
-    border: 0; }
+    border: 0;
+    background-color: #f2f2f2; }
   .slider-price__table {
     width: auto;
     -webkit-transform: translate(0);
@@ -1484,7 +1489,8 @@ body {
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
 
 .presentation__description {
   padding: 42px 20px 35px;
@@ -1542,10 +1548,10 @@ body {
 
 .user-info__input {
   display: block;
-  margin: 0 auto;
+  margin: 3px auto 0;
   height: 60px;
   width: 255px;
-  border: 3px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   padding: 0 10px;
   font-size: 18px; }
 
@@ -1553,22 +1559,22 @@ body {
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  padding-left: 20px; }
+  line-height: 25px;
+  padding-left: 10px; }
 
 .user-info__input:-ms-input-placeholder {
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  padding-left: 20px; }
+  line-height: 25px;
+  padding-left: 10px; }
 
 .user-info__input::placeholder {
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  padding-left: 20px; }
+  line-height: 25px;
+  padding-left: 10px; }
 
 .user-info__item {
   display: -webkit-box;
@@ -1681,7 +1687,7 @@ body {
     width: 35px;
     height: 35px;
     background-color: #ffffff;
-    border: 3px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     position: absolute;
     bottom: -8px;
     left: -70px; }
@@ -1793,7 +1799,7 @@ body {
   display: block;
   height: 60px;
   width: 250px;
-  border: 3px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   margin: 0 auto;
   padding: 0 10px;
   font-size: 18px; }
@@ -1802,22 +1808,22 @@ body {
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  padding-left: 20px; }
+  line-height: 22px;
+  padding-left: 10px; }
 
 .contact__input:-ms-input-placeholder {
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  padding-left: 20px; }
+  line-height: 22px;
+  padding-left: 10px; }
 
 .contact__input::placeholder {
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  padding-left: 20px; }
+  line-height: 22px;
+  padding-left: 10px; }
 
 @media (min-width: 660px) {
   .contact {
@@ -1852,7 +1858,7 @@ body {
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       position: absolute;
-      top: -68px;
+      top: -67px;
       right: -354px; }
   .contact__label--mail {
     position: relative; }
@@ -1866,14 +1872,11 @@ body {
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       position: absolute;
-      top: -68px;
+      top: -67px;
       right: -385px; } }
 
 @media (min-width: 960px) {
   .contact .form__fieldset {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -1898,10 +1901,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    padding: 8px 0 15px; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 8px 0 15px;
+    width: 100%; }
   .contact__input {
     width: 350px; }
   .contact__label {
@@ -1911,14 +1914,14 @@ body {
     .contact__label--tel::after {
       content: "";
       position: absolute;
-      top: -68px;
+      top: -67px;
       right: -226px; }
   .contact__label--mail {
     position: relative; }
     .contact__label--mail::after {
       content: "";
       position: absolute;
-      top: -68px;
+      top: -67px;
       right: -258px; } }
 
 .os-select {
@@ -1966,7 +1969,7 @@ body {
     height: 35px;
     border-radius: 50%;
     background-color: #ffffff;
-    border: 3px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     position: absolute;
     top: 0;
     left: -70px;
@@ -2016,27 +2019,28 @@ body {
   margin: 10px auto 0;
   text-align: left;
   display: block;
-  border: 3px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   padding: 10px;
+  padding-top: 17px;
   font-size: 18px; }
   .textarea__description::-webkit-input-placeholder {
     color: #283645;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    padding: 20px 19px; }
+    padding: 3px 8px; }
   .textarea__description:-ms-input-placeholder {
     color: #283645;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    padding: 20px 19px; }
+    padding: 3px 8px; }
   .textarea__description::placeholder {
     color: #283645;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    padding: 20px 19px; }
+    padding: 3px 8px; }
 
 @media (min-width: 660px) {
   .textarea {
@@ -2048,11 +2052,17 @@ body {
     width: 480px;
     height: 170px; }
     .textarea__description::-webkit-input-placeholder {
-      font-size: 19px; }
+      font-size: 19px;
+      word-spacing: -6px;
+      padding-top: 1px; }
     .textarea__description:-ms-input-placeholder {
-      font-size: 19px; }
+      font-size: 19px;
+      word-spacing: -6px;
+      padding-top: 1px; }
     .textarea__description::placeholder {
-      font-size: 19px; }
+      font-size: 19px;
+      word-spacing: -6px;
+      padding-top: 1px; }
   .textarea__heading {
     display: none; } }
 
@@ -2091,7 +2101,7 @@ body {
   text-transform: uppercase; }
 
 .form__container-submit {
-  padding: 0 18px; }
+  padding: 0 15px; }
 
 .form__submit {
   margin-top: 8px; }
@@ -2203,7 +2213,9 @@ body {
     margin-left: 20px;
     padding-bottom: 50px; }
   .form__fieldset--contact {
-    width: 940px; }
+    width: 940px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .form__fieldset--achievements {
     width: 940px;
     margin: 20px auto 0; }
@@ -2287,8 +2299,10 @@ body {
     font-size: 14px;
     line-height: 18px;
     margin-right: 37px;
-    margin-top: 0; }
+    margin-top: 10px; }
   .footer-main__logo-academy {
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: -9px;
     left: 92px; } }
@@ -2964,7 +2978,7 @@ body {
     margin-right: 35px; }
   .upload__tool-line-container {
     margin-right: 60px;
-    margin-top: 70px; }
+    margin-top: auto; }
   .upload__line-container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
