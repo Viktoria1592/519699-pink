@@ -593,7 +593,7 @@ body {
   background-repeat: no-repeat; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .header-main__intro {
+  .information__img {
     background-image: url("../img/iphone-screen-mobile@2x.png"); } }
 
 @media (min-width: 660px) {
@@ -3159,8 +3159,8 @@ body {
       width: 215px;
       height: 215px;
       position: absolute;
-      top: 76px;
-      right: 24px; }
+      top: 78px;
+      right: 29px; }
     .news__img::before {
       content: "24";
       font-size: 120px;
